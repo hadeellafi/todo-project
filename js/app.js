@@ -1,11 +1,9 @@
 'use strict'
-function checkString(string){
-    if(string=="Yes")
-    arr.push("Yes");
-    else if(string=="No")
-    arr.push("No");
-    else
-    arr.push("invalid");
+function checkString(data){
+     if( data==null||data=="")
+     arr.push("invalid");
+     else
+     arr.push(data);
 }
 function printArray(tArr)//t:temporary
 {
@@ -48,9 +46,5 @@ checkString(input);
  input=prompt("will you come again,answer should be (Yes/No)");
 checkString(input);
 printArray(arr);
-// As a user, I would like to answer more questions, so you should add new three (Yes/No) questions.
-// If the input was empty consider the answer to be an "invalid" string.
-// Consider putting all the answers into an array.
-// Traverse the array and print the items on the console.
-// Confirm that your code is following the single responsibility rule. Each function should only do one thing.
-// All functions and variables should have a meaningful name (use camelCase).
+
+
