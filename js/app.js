@@ -1,6 +1,6 @@
 'use strict'
 function checkString(data){
-     if( data==null||data=="")
+     if( data==null||data==="")
      arr.push("invalid");
      else
      arr.push(data);
